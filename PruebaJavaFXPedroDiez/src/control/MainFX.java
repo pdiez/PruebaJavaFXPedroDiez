@@ -40,8 +40,6 @@ public class MainFX extends Application {
 	        stage.setScene(new Scene(pane));
 	        stage.getScene().getStylesheets().add("/vista/styles.css");
 	        
-	        
-	        
 	        stage.show();
 
 
@@ -55,5 +53,7 @@ public class MainFX extends Application {
 	public static void main(String[] args) {
 		launch(args);
 	}
+	
+	
 
 }
