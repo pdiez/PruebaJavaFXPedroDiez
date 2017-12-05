@@ -1,0 +1,8 @@
+.boton_redondo Button {
+	-fx-background-radius: 50;
+}
+
+#textoGrande {
+	-fx-font-family: "/vista/assets/fonts/PoiretOne-Regular.ttf";
+	-fx-font-size: 32;
+}

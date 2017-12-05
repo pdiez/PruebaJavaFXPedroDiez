@@ -1,8 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ControlFX">
+   <children>
+      <SplitPane dividerPositions="0.6693386773547094" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="pnlIzquierda" minHeight="0.0" minWidth="300.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-image: assets\images\freesolo.png; -fx-background-size: cover;">
+               <children>
+                  <ImageView fitHeight="345.0" fitWidth="678.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@assets/images/freesolo.png" />
+                     </image>
+                  </ImageView>
+                  <Pane cache="true" layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" opacity="0.5" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #5D4037;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="btnAcerca" layoutX="108.0" layoutY="503.0" styleClass="boton_redondo" stylesheets="@styles.css" text="ABOUT US" />
+                        <Label layoutX="89.0" layoutY="373.0" text="Create Your" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font></Label>
+                        <Label layoutX="89.0" layoutY="418.0" text="Own Account" textFill="WHITE">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="pnlDerecha" minHeight="0.0" minWidth="300.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #BDBDBD;" stylesheets="@styles.css">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="126.0" layoutY="83.0" prefHeight="56.0" prefWidth="60.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;" text="M" textAlignment="CENTER" textFill="#FF4081">
+                  <font>
+				            <Font name="Microsoft JhengHei UI Light" size="39.0" />
+				   </font>
+				   </Label>
+                  <JFXTextField accessibleText="FIRST NAME" labelFloat="true" layoutX="59.0" layoutY="178.0" prefHeight="35.0" prefWidth="172.0" text="FIRST NAME" />
+                  <JFXTextField accessibleText="FIRST NAME" labelFloat="true" layoutX="59.0" layoutY="222.0" prefHeight="35.0" prefWidth="172.0" text="LAST NAME" />
+                  <JFXTextField accessibleText="FIRST NAME" labelFloat="true" layoutX="59.0" layoutY="272.0" prefHeight="35.0" prefWidth="172.0" text="E-MAIL" />
+                  <JFXPasswordField labelFloat="true" layoutX="59.0" layoutY="330.0" prefHeight="35.0" prefWidth="172.0" text="PASSWORD" />
+                  <JFXPasswordField labelFloat="true" layoutX="59.0" layoutY="383.0" prefHeight="35.0" prefWidth="172.0" text="REPEAT PASSWORD" />
+                  <JFXToggleButton layoutX="30.0" layoutY="517.0" text="UNDER 18 ?" />
+                  <JFXButton fx:id="cmdGetStarted" layoutX="205.0" layoutY="534.0" onAction="#openStage" ripplerFill="#c43a08" style="-fx-background-radius: 50;" text="GET STARTED" textFill="#d7ccc8" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
 </AnchorPane>
-
